@@ -119,7 +119,7 @@ export default function Features() {
   }, [controls, isInView]);
 
   return (
-    <section ref={ref} className="relative py-20 sm:py-24 lg:py-32 overflow-hidden bg-gradient-to-b from-gray-50 to-white" id="features">
+    <section ref={ref} className="relative py-20 sm:py-24 lg:py-32 overflow-hidden bg-linear-to-b from-gray-50 to-white" id="features">
       {/* Background decoration */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
@@ -136,7 +136,7 @@ export default function Features() {
           }}
           className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 lg:mb-20"
         >
-          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-purple-100 to-teal-100 text-purple-700 text-sm font-semibold mb-4">
+          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-linear-to-r from-purple-100 to-teal-100 text-purple-700 text-sm font-semibold mb-4">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-purple-500"></span>
@@ -144,7 +144,7 @@ export default function Features() {
             Pourquoi nous choisir ?
           </span>
           
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 bg-linear-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
             Tout ce dont votre communauté a besoin
           </h2>
           
@@ -167,7 +167,7 @@ export default function Features() {
               whileHover={{ y: -8, transition: { duration: 0.2 } }}
               className="group relative"
             >
-              <div className="absolute inset-0 bg-gradient-to-r opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl blur-xl"
+              <div className="absolute inset-0 bg-linear-to-r opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl blur-xl"
                 style={{
                   background: `linear-gradient(135deg, var(--tw-gradient-from), var(--tw-gradient-to))`,
                 }}
@@ -175,8 +175,8 @@ export default function Features() {
               
               <div className="relative h-full bg-white rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
                 {/* Icon */}
-                <div className={`inline-flex p-3 rounded-xl bg-gradient-to-r ${feature.bgGradient} mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                  <div className={`w-8 h-8 text-${feature.color}-600`}>
+                <div className={`inline-flex p-3 rounded-xl bg-linear-to-r ${feature.bgGradient} mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                  <div className={`w-8 h-8 text-${feature.color}-900`}>
                     {feature.icon}
                   </div>
                 </div>
@@ -192,7 +192,7 @@ export default function Features() {
                 </p>
 
                 {/* Decorative line */}
-                <div className={`absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r ${feature.gradient} rounded-b-2xl transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left`} />
+                <div className={`absolute bottom-0 left-0 right-0 h-1 bg-linear-to-r ${feature.gradient} rounded-b-2xl transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left`} />
               </div>
             </motion.div>
           ))}
@@ -207,7 +207,7 @@ export default function Features() {
           }}
           className="text-center mt-12 sm:mt-16 lg:mt-20"
         >
-          <button className="group relative inline-flex items-center justify-center px-8 py-3 overflow-hidden font-medium text-white transition-all duration-300 ease-out bg-gradient-to-r from-purple-600 to-teal-600 rounded-full hover:from-purple-700 hover:to-teal-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 shadow-lg hover:shadow-xl transform hover:scale-105">
+          <button className="group relative inline-flex items-center justify-center px-8 py-3 overflow-hidden font-medium text-white transition-all duration-300 ease-out bg-linear-to-r from-purple-600 to-teal-600 rounded-full hover:from-purple-700 hover:to-teal-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 shadow-lg hover:shadow-xl transform hover:scale-105">
             <span className="relative flex items-center gap-2">
               Découvrir toutes les fonctionnalités
               <svg className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -49,7 +49,7 @@ export default function Navbar() {
                 />
               </div>
               <span className="hidden sm:inline text-xl md:text-2xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">
-                SahelTech
+                SnapseTech
               </span>
             </Link>
 
@@ -71,7 +71,7 @@ export default function Navbar() {
             <div className="hidden lg:block">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center px-6 py-2.5 bg-gradient-to-r from-primary to-primary-dark text-white font-semibold rounded-full hover:shadow-lg transform hover:scale-105 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                className="inline-flex items-center justify-center px-6 py-2.5 bg-green-600 text-white font-semibold rounded-full hover:shadow-lg transform hover:scale-105 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
               >
                 Commencer
                 <svg
